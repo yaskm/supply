@@ -18,7 +18,7 @@ public class Product {
 		ProductDisc = productDisc;
 		ProductPrice = productPrice;
 	}
-
+   
 	public int getProductID() {
 		return ProductID;
 	}

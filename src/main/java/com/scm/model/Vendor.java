@@ -30,8 +30,8 @@ public class Vendor {
 		return VendorName;
 	}
 
-	public void setVendorName(String vendorName) {
-		VendorName = vendorName;
+	public void setVendorName(String i) {
+		VendorName = i;
 	}
 
 	public String getVendorPassword() {

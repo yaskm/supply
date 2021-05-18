@@ -6,11 +6,12 @@ import com.scm.user.util.UserAthuntiacater;
 import com.scm.vendor.util.VendorAthuntiacater;
 
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-
+@WebServlet("userlogin")
 public class userlogin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

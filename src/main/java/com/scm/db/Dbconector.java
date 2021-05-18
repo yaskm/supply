@@ -15,7 +15,7 @@ public class Dbconector {
 		Connection con = null;
 		try {
 			ctx = new InitialContext();
-			ds = (DataSource) ctx.lookup("java:/comp/env/jdbc/college");
+			ds = (DataSource) ctx.lookup("java:/comp/env/jdbc/sulpycha");
 			con = ds.getConnection();
 			return con;
 		} catch (NamingException | SQLException e) {

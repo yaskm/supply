@@ -3,14 +3,14 @@ package com.scm.admin.servlet;
 import java.io.IOException;
 
 import com.scm.admin.util.AdminAthuntiacater;
-import com.scm.vendor.util.VendorAthuntiacater;
 
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-
+@WebServlet("adminlogin")
 public class adminlogin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -20,6 +20,7 @@ public class adminlogin extends HttpServlet {
 		try {
 			String AdminName = request.getParameter("AdminName");
 			String AdminPassword = request.getParameter("AdminPassword");
+			
 			boolean auth = AdminAthuntiacater.validate(AdminName, AdminPassword);
 			if (auth) {
 				session.setAttribute("AUTH", true);
